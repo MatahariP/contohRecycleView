@@ -15,16 +15,20 @@ class MainActivity : AppCompatActivity() {
 
         var itemList = mutableListOf(
             Item("Adip", "Matahari Pradipta", "2110512086"),
+            Item("Dipta", "Matahari Pradipta", "2110512086"),
+            Item("Matahari", "Matahari Pradipta", "2110512086"),
             Item("Adip", "Matahari Pradipta", "2110512086"),
+            Item("Dipta", "Matahari Pradipta", "2110512086"),
             Item("Adip", "Matahari Pradipta", "2110512086"),
+            Item("Matahari", "Matahari Pradipta", "2110512086"),
             Item("Adip", "Matahari Pradipta", "2110512086"),
+            Item("Dipta", "Matahari Pradipta", "2110512086"),
+            Item("Matahari", "Matahari Pradipta", "2110512086"),
             Item("Adip", "Matahari Pradipta", "2110512086"),
+            Item("Dipta", "Matahari Pradipta", "2110512086"),
+            Item("Matahari", "Matahari Pradipta", "2110512086"),
             Item("Adip", "Matahari Pradipta", "2110512086"),
-            Item("Adip", "Matahari Pradipta", "2110512086"),
-            Item("Adip", "Matahari Pradipta", "2110512086"),
-            Item("Adip", "Matahari Pradipta", "2110512086"),
-            Item("Adip", "Matahari Pradipta", "2110512086"),
-            Item("Adip", "Matahari Pradipta", "2110512086"),
+            Item("Matahari", "Matahari Pradipta", "2110512086"),
             Item("Adip", "Matahari Pradipta", "2110512086")
 
             )
