@@ -3,6 +3,7 @@ package com.example.contohrecycleview
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -19,14 +20,8 @@ class ListAdapter(
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         holder.itemView.apply {
-            val tvPanggilan = findViewById<TextView>(R.id.tvPanggilan)
-            tvPanggilan.text = item[position].panggilan;
-
-            val tvNamaLengkap = findViewById<TextView>(R.id.tvNamaLengkap)
-            tvNamaLengkap.text = item[position].namaLengkap;
-
-            val tvNIM = findViewById<TextView>(R.id.tvNIM)
-            tvNIM.text = item[position].NIM;
+            val ivGambar = findViewById<ImageView>(R.id.ivGambar)
+            ivGambar.setImageResource(item[position].urlGambar);
 
         }
     }

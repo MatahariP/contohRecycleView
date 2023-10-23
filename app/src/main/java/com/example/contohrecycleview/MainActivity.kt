@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -14,22 +15,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var itemList = mutableListOf(
-            Item("Adip", "Matahari Pradipta", "2110512086"),
-            Item("Dipta", "Matahari Pradipta", "2110512086"),
-            Item("Matahari", "Matahari Pradipta", "2110512086"),
-            Item("Adip", "Matahari Pradipta", "2110512086"),
-            Item("Dipta", "Matahari Pradipta", "2110512086"),
-            Item("Adip", "Matahari Pradipta", "2110512086"),
-            Item("Matahari", "Matahari Pradipta", "2110512086"),
-            Item("Adip", "Matahari Pradipta", "2110512086"),
-            Item("Dipta", "Matahari Pradipta", "2110512086"),
-            Item("Matahari", "Matahari Pradipta", "2110512086"),
-            Item("Adip", "Matahari Pradipta", "2110512086"),
-            Item("Dipta", "Matahari Pradipta", "2110512086"),
-            Item("Matahari", "Matahari Pradipta", "2110512086"),
-            Item("Adip", "Matahari Pradipta", "2110512086"),
-            Item("Matahari", "Matahari Pradipta", "2110512086"),
-            Item("Adip", "Matahari Pradipta", "2110512086")
+            Item(R.drawable.c_programming_language_svg),
+            Item(R.drawable.csharp),
+            Item(R.drawable.js),
+            Item(R.drawable.r),
+            Item(R.drawable.html),
+            Item(R.drawable.java_logo),
+            Item(R.drawable.kotlin),
+            Item(R.drawable.phytob)
 
             )
         val rvItem = findViewById<RecyclerView>(R.id.rvItem)
@@ -37,6 +30,6 @@ class MainActivity : AppCompatActivity() {
 
         val adapter = ListAdapter(itemList)
         rvItem.adapter = adapter
-        rvItem.layoutManager = LinearLayoutManager(this)
+        rvItem.layoutManager = GridLayoutManager(this,2)
     }
 }
